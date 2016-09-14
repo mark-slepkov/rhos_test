@@ -68,14 +68,12 @@ define(
             // At first i cached the collection and make it empty
             // At second I rerendered view.
             onChildviewAccepted: function(){
-                console.log('childview:accepted');
                 this.emptyView = AcceptedView;
                 this.cachedCollection = this.collection;
                 this.collection = null;
                 this.render()
             },
             onChildviewDeclined: function(){
-                console.log('childview:declined');
                 this.emptyView = DeclinedView;
                 this.cachedCollection = this.collection;
                 this.collection = null;

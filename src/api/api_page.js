@@ -30,7 +30,6 @@ define(
 
             onRender: function(){
                 var genres_collection = new GenresCollection();
-                genres_collection.fetch();
                 this.getRegion('genres').show(new Genres({collection: genres_collection}));
                 var selected_genres = new GenresCollection();
                 this.getRegion('selected_genres').show(new SelectedGenres({collection: selected_genres}));

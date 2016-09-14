@@ -17859,14 +17859,12 @@ var jquery =
 	            // At first i cached the collection and make it empty
 	            // At second I rerendered view.
 	            onChildviewAccepted: function(){
-	                console.log('childview:accepted');
 	                this.emptyView = AcceptedView;
 	                this.cachedCollection = this.collection;
 	                this.collection = null;
 	                this.render()
 	            },
 	            onChildviewDeclined: function(){
-	                console.log('childview:declined');
 	                this.emptyView = DeclinedView;
 	                this.cachedCollection = this.collection;
 	                this.collection = null;
@@ -18178,7 +18176,6 @@ var jquery =
 	
 	            onRender: function(){
 	                var genres_collection = new GenresCollection();
-	                genres_collection.fetch();
 	                this.getRegion('genres').show(new Genres({collection: genres_collection}));
 	                var selected_genres = new GenresCollection();
 	                this.getRegion('selected_genres').show(new SelectedGenres({collection: selected_genres}));
