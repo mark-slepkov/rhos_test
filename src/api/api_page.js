@@ -60,7 +60,7 @@ define(
                 this.getRegion('selected_genres').currentView.toggleItem(model)
             },
             syncronizeWithSelected: function(){
-                // When we upload new collection of genres we must send an actual status of activity
+                // When we upload new collection of genres we must set an actual status of activity
                 // We just get this info in a collection of selected genres
                 var selected_genres = this.getRegion('selected_genres').currentView.collection;
                 var current_genres = this.getRegion('genres').currentView.collection;
