@@ -67,7 +67,6 @@ define(
                 for (var i = 0; i < selected_genres.length; i++ ){
                     var selected_model = selected_genres.models[i];
                     var model = current_genres.findWhere({id: selected_model.get('id')});
-                    console.log(selected_model.get('id'), model.get('id'));
                     if(model){
                         model.set(selected_model.toJSON());
                     }
